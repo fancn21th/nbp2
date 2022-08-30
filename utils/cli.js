@@ -23,10 +23,17 @@ const flags = {
 		type: `boolean`,
 		alias: `v`,
 		desc: `Print CLI version`
+	},
+	dryRun: {
+		type: `boolean`,
+		alias: `dr`,
+		default: false,
+		desc: `Show the output in console`
 	}
 };
 
 const commands = {
+	run: { desc: `中文数组转换成拼音命名表格` },
 	help: { desc: `Print help info` }
 };
 
