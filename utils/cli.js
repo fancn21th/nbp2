@@ -2,10 +2,26 @@ const meow = require('meow');
 const meowHelp = require('cli-meow-help');
 
 const flags = {
+	dryRun: {
+		type: `boolean`,
+		alias: `d`,
+		default: true,
+		desc: `Show the output in console`
+	},
+	version: {
+		type: `boolean`,
+		alias: `v`,
+		desc: `Print CLI version`
+	},
+	style: {
+		type: `string`,
+		default: `camelCase`,
+		alias: `s`,
+		desc: `camelCase[testString], constantCase[TEST_STRING], dotCase[test.string], paramCase[test-string], pascalCase[TestString], snakeCase[test_string]`
+	},
 	clear: {
 		type: `boolean`,
-		default: true,
-		alias: `c`,
+		default: false,
 		desc: `Clear the console`
 	},
 	noClear: {
@@ -16,19 +32,17 @@ const flags = {
 	debug: {
 		type: `boolean`,
 		default: false,
-		alias: `d`,
 		desc: `Print debug info`
 	},
-	version: {
-		type: `boolean`,
-		alias: `v`,
-		desc: `Print CLI version`
+	prefix: {
+		type: `string`,
+		default: ` `,
+		desc: `prefix`
 	},
-	dryRun: {
-		type: `boolean`,
-		alias: `dr`,
-		default: false,
-		desc: `Show the output in console`
+	suffix: {
+		type: `string`,
+		default: ` `,
+		desc: `suffix`
 	}
 };
 
