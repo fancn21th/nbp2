@@ -36,11 +36,12 @@ camelCase[testString], constantCase[TEST_STRING], dotCase[test.string], paramCas
 				});
 
 				if (flags.dryRun) {
+					console.log();
 					console.log(output);
 				}
 
 				console.log();
-				console.log(console.log('转换成功'));
+				console.log(bgGreen('转换成功'));
 			});
 		} else {
 			throw new Error(
