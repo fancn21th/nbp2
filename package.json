@@ -1,7 +1,7 @@
 {
 	"name": "nbp2",
 	"description": "naming by pinyin version 2",
-	"version": "0.0.1",
+	"version": "0.3.0",
 	"license": "MIT",
 	"bin": {
 		"nbp2": "index.js"
