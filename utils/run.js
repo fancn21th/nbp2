@@ -13,7 +13,12 @@ module.exports = async function (flags) {
 	console.log(
 		blue(
 			`支持以下 Case Style
-camelCase[testString], constantCase[TEST_STRING], dotCase[test.string], paramCase[test-string], pascalCase[TestString], snakeCase[test_string]`
+camelCase     - "testString" 
+constantCase  - "TEST_STRING"
+dotCase       - "test.string"
+paramCase     - "test-string"
+pascalCase    - "TestString"
+snakeCase     - "test_string"`
 		)
 	);
 
