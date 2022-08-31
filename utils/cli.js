@@ -12,7 +12,7 @@ const flags = {
 		type: `string`,
 		default: `camelCase`,
 		alias: `s`,
-		desc: `* 
+		desc: `* case style:
 camelCase     - "testString" 
 constantCase  - "TEST_STRING"
 dotCase       - "test.string"
@@ -23,12 +23,12 @@ snakeCase     - "test_string"`
 	prefix: {
 		type: `string`,
 		default: ` `,
-		desc: `* prefix - "prefixTestString"`
+		desc: `* prefix      - "prefixTestString"`
 	},
 	suffix: {
 		type: `string`,
 		default: ` `,
-		desc: `* suffix - "testStringSuffix"`
+		desc: `* suffix      - "testStringSuffix"`
 	},
 	version: {
 		type: `boolean`,
