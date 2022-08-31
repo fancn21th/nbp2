@@ -6,18 +6,34 @@ const flags = {
 		type: `boolean`,
 		alias: `d`,
 		default: true,
-		desc: `Show the output in console`
-	},
-	version: {
-		type: `boolean`,
-		alias: `v`,
-		desc: `Print CLI version`
+		desc: `* Show the output in console`
 	},
 	style: {
 		type: `string`,
 		default: `camelCase`,
 		alias: `s`,
-		desc: `camelCase[testString], constantCase[TEST_STRING], dotCase[test.string], paramCase[test-string], pascalCase[TestString], snakeCase[test_string]`
+		desc: `* 
+camelCase     - "testString" 
+constantCase  - "TEST_STRING"
+dotCase       - "test.string"
+paramCase     - "test-string"
+pascalCase    - "TestString"
+snakeCase     - "test_string"`
+	},
+	prefix: {
+		type: `string`,
+		default: ` `,
+		desc: `* prefix - "prefixTestString"`
+	},
+	suffix: {
+		type: `string`,
+		default: ` `,
+		desc: `* suffix - "testStringSuffix"`
+	},
+	version: {
+		type: `boolean`,
+		alias: `v`,
+		desc: `Print CLI version`
 	},
 	clear: {
 		type: `boolean`,
@@ -33,16 +49,6 @@ const flags = {
 		type: `boolean`,
 		default: false,
 		desc: `Print debug info`
-	},
-	prefix: {
-		type: `string`,
-		default: ` `,
-		desc: `prefix`
-	},
-	suffix: {
-		type: `string`,
-		default: ` `,
-		desc: `suffix`
 	}
 };
 
