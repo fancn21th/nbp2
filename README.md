@@ -1,7 +1,6 @@
-# nbp2
+# nbp2 中文命名 转 英文命名 拼音法
 
 > naming after pinyin
-> 中文命名 转 英文命名
 
 ## 动机
 
