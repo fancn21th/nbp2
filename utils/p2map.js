@@ -3,7 +3,7 @@ const changeCase = require('change-case');
 
 const config = {
 	style: pinyin.STYLE_FIRST_LETTER, // 设置拼音风格
-	heteronym: true
+	heteronym: false // 启用多音字模式
 };
 
 module.exports = function (pArray, options) {
